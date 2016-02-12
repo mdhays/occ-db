@@ -1,0 +1,21 @@
+{
+  "name": "occ-db",
+  "description": "Mainly for playing around with Mongodb, I want to try and build my first database.",
+  "main": "server.js",
+  "authors": [
+    "Matthew Hays <mdhays1995@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/mdhays/occ-db",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.0"
+  }
+}
