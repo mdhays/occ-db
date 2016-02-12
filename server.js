@@ -33,12 +33,18 @@ app.get('/', (req, res) => {
 
 
 
+MongoClient.connect(MONGODB_URL, (err, database) => {
+  if (err) throw err;
+
+  db = database;
+
   app.listen(PORT, () => {
     console.log(`Node.js server started. Listening on port ${PORT}`);
   });
-
+});
 
 app.all('*', (req, res) => {
   res.status(403);
   res.send('<h1>access denied</h1>');
 });
+
